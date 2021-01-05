@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Drink Something</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="app">
+  <h1>Drink Something platform</h1>
+  <div class="orderList">
+    <label>Name:</label>
+    <input class="ordName" placeholder="Type the drink name"/>
+    <label>Price:</label>
+    <input class="ordPrice" placeholder="Type the price"/>
+    <label>Note:</label>
+    <input class="ordNote" placeholder="Leave a note"/>
+    <button v-on:click="add()">Add</button>
+  </div>
+  <div class="sortedbtn">
+    <button class="sortByname" v-on:click="sortByNameAsc()">Name(A-Z)</button>
+    <button class="sortByname" v-on:click="sortByNameDesc()">Name(Z-A)</button>
+    <button class="sortByPrice" v-on:click="sortByPriceAsc()">Price(low-high)</button>
+    <button class="sortByPrice" v-on:click="sortByPriceDesc()">Price(high-low)</button>
+  </div>
+  <div class="drink" v-for="(drink,id) in drinks" track-by="$index">
+    <div class="name">{{id+1}}. {{drink.name}}</div>
+    <div class="price">$ {{drink.price}}</div>
+    <div class="note">{{drink.note}}</div>
+    <button v-on:click="editForm(id)">✏️</button>
+    <button v-on:click="remove(id)">X</button>
+    <div id="myForm">
+      <label>Name:</label>
+      <input class="editName" type="text"/>
+      <label>Price:</label>
+      <input class="editPrice" type="text"/>
+      <button class="saveBtn" type="submit">Save</button>
+      <button v-on:click="closeForm(id)">close</button>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

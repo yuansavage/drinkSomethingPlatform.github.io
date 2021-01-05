@@ -1,0 +1,49 @@
+@charset "UTF-8";
+* {
+  font-family: 微軟正黑體;
+}
+
+.orderList {
+  width: 700px;
+  border: solid 1px black;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.sortedbtn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.drink {
+  border: solid 1px #bbb;
+  width: 700px;
+  padding: 5px;
+  margin: 5px;
+}
+.drink * {
+  display: inline-block;
+  vertical-align: middle;
+}
+.drink:hover {
+  background-color: grey;
+}
+.drink .name {
+  width: 150px;
+}
+.drink .price {
+  width: 50px;
+}
+.drink .note {
+  width: 400px;
+}
+.drink button {
+  cursor: pointer;
+  border-radius: 5px;
+}
+.drink button:hover {
+  background-color: #fff;
+}
+.drink #myForm {
+  display: none;
+}

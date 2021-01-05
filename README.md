@@ -16,6 +16,7 @@ This is a platform that you can order some drinks on it.
 
 # Skills
 -Vue.js
+
 -jQuery
 
 ![gif](/art/drinkSomething.gif)

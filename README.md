@@ -1,2 +1,5 @@
-# drinkSomethingPlatform.github.io
-This is an drink order system made by vue.js
+DrinkSomethingPlatform
+----------------------
+This is an order system of drinks made by vue.js
+
+![gif](/art/drinkSomething.gif)

@@ -1,10 +1,10 @@
-DrinkSomethingPlatform
+# DrinkSomethingPlatform
 ----------------------
 This is an order system of drinks made by Vue.js
 
 # Description
 
-This is a platform that you can order some drinks on it.
+Drink Something is a platform that you can order some drinks on it.
 
 -Input panel : Type the name and the price of drinks. Also you can leave some notes. Then, clicking the Add button to add your order to the list.
 
